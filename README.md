@@ -7,7 +7,7 @@
 - `cd` into it and `code .`
 
 ## Description
- Gif are something interested and used worldwide on so things for example (texting, instgram.....so on) becuse of that I decide to 
+ Gif are something interested and used worldwide on so many things for example (texting, instgram.....so on) becuse of that I decide to 
  create an app for user to retrieve a list of Giphy as following:
 - It has a search field and a search button for searching for any items or actors name to search over in a Giphy-list 
 - It displays a list of giphy returned by the search api call.  At least the item/element has to be visible 
@@ -20,8 +20,8 @@ GIPHY developer : https://developers.giphy.com/docs/api/endpoint/#search
 retrieved from your API: 'http://api.giphy.com/v1/gifs/search?q=clothes&api_key=OBQh5OZ0RsNCkK49aqNORvPMstxE2WcR&limit=1'
 
 ## Features 
-- User will be able to retreive and search for the Giphy they want related to their search
-- Retrieve the giphy images 
+- User will be able to retreive and search for the Giphy they want related to their search by text (text field is added)
+- Retrieve all gifs related to the search 
 
 ## goals 
 

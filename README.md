@@ -31,6 +31,32 @@ retrieved from your API: 'http://api.giphy.com/v1/gifs/search?q=clothes&api_key=
 ## wireFrame
 (https://imgur.com/6Tc7YUk)
 
+## data
+Array(25)
+0:
+analytics: {onload: {…}, onclick: {…}, onsent: {…}}
+bitly_gif_url: "https://gph.is/2m8h60a"
+bitly_url: "https://gph.is/2m8h60a"
+content_url: ""
+embed_url: "https://giphy.com/embed/8gXdugre9dTaQgXF34"
+id: "8gXdugre9dTaQgXF34"
+images: {downsized_large: {…}, fixed_height_small_still: {…}, original: {…}, fixed_height_downsampled: {…}, downsized_still: {…}, …}
+import_datetime: "2018-07-09 18:34:57"
+is_sticker: 0
+rating: "g"
+slug: "sharpobjects-amy-adams-sharp-objects-8gXdugre9dTaQgXF34"
+source: ""
+source_post_url: ""
+source_tld: ""
+title: "amy adams alcohol GIF by Sharp Objects"
+trending_datetime: "0000-00-00 00:00:00"
+type: "gif"
+url: "https://giphy.com/gifs/sharpobjects-amy-adams-sharp-objects-8gXdugre9dTaQgXF34"
+user: {avatar_url: "https://media0.giphy.com/avatars/sharpobjects/rcQOBicyPTei.png", banner_image: "https://media0.giphy.com/headers/sharpobjects/7KYCUoGcGRED.png", banner_url: "https://media0.giphy.com/headers/sharpobjects/7KYCUoGcGRED.png", profile_url: "https://giphy.com/sharpobjects/", username: "sharpobjects", …}
+username: "sharpobjects"
+__proto__: Object
+
+
 
 
 

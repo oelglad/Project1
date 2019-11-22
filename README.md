@@ -28,7 +28,7 @@ retrieved from your API: 'http://api.giphy.com/v1/gifs/search?q=clothes&api_key=
  - adding future for the user to be able to eleminate his search by retreng only 10 elements
 
 
-## IFrame
+## wireFrame
 (https://imgur.com/6Tc7YUk)
 
 

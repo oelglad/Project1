@@ -13,6 +13,24 @@
 - It displays a list of giphy returned by the search api call.  At least the item/element has to be visible 
 - we are using 3 files(index.html, script.js and style.css)
 
+## API Used
+
+GIPHY developer : https://developers.giphy.com/docs/api/endpoint/#search
+
+retrieved from your API: 'http://api.giphy.com/v1/gifs/search?q=clothes&api_key=OBQh5OZ0RsNCkK49aqNORvPMstxE2WcR&limit=1'
+
+## Features 
+- User will be able to retreive and search for the Giphy they want related to their search
+- Retrieve the giphy images 
+
+## goals 
+
+ - adding future for the user to be able to eleminate his search by retreng only 10 elements
+
+
+## IFrame
+(https://imgur.com/6Tc7YUk)
+
 
 
 

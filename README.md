@@ -1,10 +1,4 @@
 <!-- First Project -->
-A working title for your app
-Description .4-5 sentences summarizing the functionality of your app. Feel free to include what problem is your app solving.
-Wireframes Wireframes showing your app's layout on desktop, tablet, and mobile. These can be as lo-fi or as hi-fi as you want. You can either to put these in the README or upload them to your repository.
-API What API you want to use and what information you want to get from it. *You must show us a sample of actual data you retrieved from your API.
-Features Write out what features you will need to build in order to meet MVP.
-Stretch goals Stretch goals for additional / advanced features for when you complete your MVP.
 
 
 ## setup

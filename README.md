@@ -58,8 +58,24 @@ username: "sharpobjects"
 __proto__: Object
 
 
+Adding a fun....called Add favorite
 
+```
+function addFavorite() {
+    toggle className on gif title
+}
 
+... inside for loop event listener
 
+conditional 
+if (
+    gif title has className of "favorite) 
+then (
+    create li 
+    append li to ul (Favorite List)
+    set innertext to gifTitle
+)
+
+```
 
 

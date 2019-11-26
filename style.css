@@ -47,11 +47,6 @@ font-size: 14px;
 font-weight: bolder;
 color: darkslateblue;
 }  
-#add {
-    background-color: #605086;
-    font-weight: bolder;
-    padding: 10px;
-}
 #results {
     display: flex;
     justify-content: center;
@@ -63,7 +58,12 @@ color: darkslateblue;
 }
 .gifsContainer {
     margin: 10px;
+    cursor: default;
 }
+button2 {
+    background-color: black;
+    padding: 10px;
+  }
 span {
       font-style: normal;
       text-align: right;
@@ -77,6 +77,4 @@ span {
       font-stretch: semi-condensed;
       padding-bottom: 10px;
   }
-  
-  
   

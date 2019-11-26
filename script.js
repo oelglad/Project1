@@ -2,50 +2,60 @@ const DOMAIN = 'http://api.giphy.com/v1/gifs/search?q=';
 const API_KEY = "OBQh5OZ0RsNCkK49aqNORvPMstxE2WcR";
 
 //const BASE_URL = 'http://api.giphy.com/v1/gifs/search?q=clothes&api_key=OBQh5OZ0RsNCkK49aqNORvPMstxE2WcR&limit=1'
-
-//<input type="text" name="clothes" value="" placeholder="clothes" id="clothes">
 window.onload = function () {
 
     const button = document.querySelector("button")
+    const button2 = document.querySelector("#add")
     const clickedElement = document.querySelector('#blank')
-    console.log(clickedElement);
-    const searchDiv = document.querySelector(".search-section")
-    const div = document.querySelector(".Giphy-list")
+    const section = document.querySelector(".Favorite")
+    const div = document.querySelector(".gifsContainer");
+    const span = document.querySelector(".count");
     const imgOutput = document.querySelector("#outputIMG");
+    const giphyInput = document.querySelector("input");
+    const addFavorite = document.querySelector("#addFav")
+    const background = document.querySelector(".fullscreen-bg")
+    const favHeart = document.querySelector(".as fa-heart")
+   
 
+    let newH2 = document.createElement("h");
+    newH2.innerHTML = "Favorite";
+    section.appendChild(newH2);
 
     button.addEventListener('click', async function (evt) {
+        evt.preventDefault();
         const clickedElement = evt.target;
-        const response = await axios.get(`${DOMAIN}${searchDiv}&api_key=${API_KEY}`);
+        const giphy = giphyInput.value;
+        const response = await axios.get(`${DOMAIN}${giphy}&api_key=${API_KEY}`);
+        console.log(response)
         let result = response.data.data;
-        console.log(result);
-
+        // console.log(result);
+        let pageCount = response.data.pagination.count;
+        let newH3 = document.createElement('h3');
+        newH3.innerHTML = pageCount;
+        span.appendChild(newH3);
+        console.log(pageCount);
 
         function giphyInfo() {
+            div.innerHTML = "";
             for (let i = 0; i < result.length; i++) {
-                if (i < 5) {
-                    let searchTitle = result[i].title;
-                    let pagination = result[i].embed_url;
-                    console.log(pagination);
-                    let imgContainer = document.createElement("iframe");
-                    imgContainer.setAttribute("src", pagination);
-                    console.log(imgContainer);
-                    let newH2 = document.createElement('h2');
-                   // let para = document.createElement('p');
-
-                    newH2.innerHTML = searchTitle;
-                    div.appendChild(newH2);
-                    imgOutput.appendChild(imgContainer);
-
-                } else {
-                    console.log("done!");
-                }
+                let searchTitle = result[i].title;
+                let b = document.createElement('button2');
+                let imgList = result[i].embed_url;
+                let imgContainer = document.createElement("iframe");
+                imgContainer.setAttribute("src", imgList);
+                let newH = document.createElement('h4');
+                let iFav = document.createElement('i');
+                let ifa = document.createElement('i2');
+                iFav.innerHTML = favHeart;
+                newH.innerHTML = searchTitle;
+               // b2.innerHTML = button2;
+                div.appendChild(newH);
+                //div.appendChild(b2);
+                div.appendChild(imgContainer);
             }
         }
         giphyInfo();
     })
+
 }
 
-// id: "EyIPL8j0LgYso"
-//title: "clean clothes GIF"
-//data.pagination.total_count: 35525

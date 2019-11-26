@@ -1,52 +1,73 @@
 
-body {
+.header {
+    background-color: #F1F1F1;
     text-align: center;
-    background-color:#605040;
-    align-items: center
+    padding: 20px;
+    font-weight: bolder;
   }
-h2 {
-    margin: 20px;
+body {
+    background-image: url('https://i.imgur.com/vGOZcw9.jpg');
+    background-size: 100%;
+    background-position: fixed;
+    font-family: Arial;
+    padding: 10px;   
+    }
+h1 {
+        color: wheat;
+        text-align: center;
+        font-family: cursive;
+        font-style: italic;
+    }
+form {
+    display: flex;
+    text-transform: uppercase;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px;
+    padding: 12px;
 }
-  button {
-    border: 1px solid black;
-    background-color: rgb(166, 62, 149);
-    padding: 5px;
-    border-radius: 14%;
+button {
+    background-color: #605086;
+    font-weight: bolder;
+    padding: 10px;
   }
-  #blank{
-    background-color: white;
-    padding: 5px;
-    border-radius: 14%;
-  }
-  .temp {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: space-around;
-    justify-content: space-evenly;
-  }
-  .search-section {
+  .Favorite {
+    font-size: 18px;
+    text-align: right;
+    color: bisque;
+    font-weight: bolder;
+ }
+
+.Giphy-list {
+ display: flex;
+justify-content: center;
+font-size: 14px;
+font-weight: bolder;
+color: darkslateblue;
+}  
+#add {
+    background-color: #605086;
+    font-weight: bolder;
+    padding: 10px;
+}
+#results {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    flex-wrap: wrap;
     margin: 10px;
-    border-radius: 14%;
-  }
-  .Giphy-list {
-    margin: 0 auto;
-    transition-property: background-color;
-    transition-duration: 3s;
-    transition-delay: 1s;   
-    background-color: aqua; 
-    font-size: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    max-width:100%;
-    height:auto;
-  }
-  @media screen and (max-width: 480px){
-    h2{
-        justify-content: center;
-      }
+    width: 600px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gifsContainer {
+    margin: 10px;
+}
+span {
+      font-style: normal;
+      text-align: right;
+      font-size: medium;
   }
   footer{
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -54,6 +75,8 @@ h2 {
       text-align: right;
       font-style: italic;
       font-stretch: semi-condensed;
+      padding-bottom: 10px;
   }
+  
   
   

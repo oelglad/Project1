@@ -26,6 +26,7 @@ retrieved from your API: 'http://api.giphy.com/v1/gifs/search?q=clothes&api_key=
 ## goals 
 
  - adding a new future like animated text
+ - user has the option to add his favorite giphy to a favorite bar
 
 
 ## wireFrame

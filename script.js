@@ -50,8 +50,9 @@ window.onload = function () {
         div.appendChild(imgContainer);
         div.appendChild(button2);
 
-        button2.addEventListener('click', function (evt) {
-          let clickedElement2 = evt.target;
+        button2.addEventListener('click', function () {
+          let clickedElement2 = searchTitle;
+          console.log(clickedElement2);
         }, false);
         if (evt.target.tagName === 'h4') {
           evt.target.classList.toggle('.gifsContainer');

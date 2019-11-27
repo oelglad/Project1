@@ -45,7 +45,7 @@ window.onload = function () {
         let button2 = document.createElement("button");
         iFav.innerHTML = favHeart;
         newH.innerHTML = searchTitle;
-        
+
         div.appendChild(newH);
         div.appendChild(imgContainer);
         div.appendChild(button2);
@@ -55,9 +55,7 @@ window.onload = function () {
           console.log(clickedElement2);
         }, false);
         if (evt.target.tagName === 'h4') {
-          evt.target.classList.toggle('.gifsContainer');
-          let element = document.getElementsByTagName("newH");
-          element.classList.toggle(".Favorite");
+          clickedElement2.classList.toggle(".Favorite");
         }
       }
     }

@@ -7,6 +7,7 @@ window.onload = function () {
   const button = document.querySelector("button")
   const clickedElement = document.querySelector('#blank')
   const section = document.querySelector(".Favorite")
+  const favCont = document.querySelector(".FavContainer");
   const div = document.querySelector(".gifsContainer");
   const span = document.querySelector(".count");
   const imgOutput = document.querySelector("#outputIMG");
@@ -15,9 +16,9 @@ window.onload = function () {
   const favHeart = document.querySelector(".fas fa-heart")
 
 
-  let newH2 = document.createElement("h");
-  newH2.innerHTML = "Favorite";
-  section.appendChild(newH2);
+  // let newH2 = document.createElement("h2");
+  // newH2.innerHTML = "Favorite";
+  // section.appendChild(newH2);
 
   button.addEventListener('click', async function (evt) {
     evt.preventDefault();
@@ -36,7 +37,6 @@ window.onload = function () {
       div.innerHTML = "";
       for (let i = 0; i < result.length; i++) {
         let searchTitle = result[i].title;
-        let b = document.createElement('button2');
         let imgList = result[i].images.fixed_height.url;
         let imgContainer = document.createElement("img");
         imgContainer.setAttribute("src", imgList);
@@ -53,10 +53,16 @@ window.onload = function () {
         button2.addEventListener('click', function () {
           let clickedElement2 = searchTitle;
           console.log(clickedElement2);
-        }, false);
-        if (evt.target.tagName === 'h4') {
-          clickedElement2.classList.toggle(".Favorite");
-        }
+          //Need to append clickedElement2 to favorite
+          let favorites = [];
+          favorites.push(clickedElement2);
+          favorites.forEach(function (element) {
+            let newH5 = document.createElement('li');
+            newH5.innerHTML = element;
+            favCont.appendChild(newH5);
+          })
+
+        });
       }
     }
     giphyInfo();

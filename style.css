@@ -6,18 +6,18 @@
     font-weight: bolder;
   }
 body {
-   background-image: url('https://i.imgur.com/ZwOAp0R.jpg');
-    background-size: 100%;
-    background-position: fixed;
+   background-image: url('https://i.imgur.com/ss6UQjy.jpg');
+    background-size: 130%;
     font-family: Arial;
-    padding: 10px;   
+    align-content: center;
     }
 h1 {
-        color: wheat;
+        color: #420D09;
         text-align: center;
         font-family: cursive;
         font-style: italic;
         font-weight: bolder;
+        font-size: 44px;
     }
 form {
     display: flex;
@@ -30,62 +30,56 @@ form {
     padding: 12px;
 }
 button {
-    background-color: #b5651d;
+    background-color:rgba(66, 13, 55, 0.589);
     font-weight: bolder;
     padding: 10px;
     margin: 0px;
   }
   button:hover {
-    background-color: yellow;
-    color: black;
+    background-color: darkolivegreen;
     transition: all 0.25s ease;
   }
   .Favorite{
     font-size: 14px;
-    text-align: left;
-    color: wheat;
+    text-align: right;
+    color: #420D09;
     font-weight: bolder;
     font-family: cursive;
  }
 .Giphy-list {
 display: flex;
 justify-content: center;
-color: #b5651d;
-font-weight: bolder;
-flex-flow: row wrap;
 font-family: cursive;
 }  
 #results {
     display: flex;
-    justify-content: center;
+    width: 1000px;
     flex-wrap: wrap;
-    margin: 10px;
-    width: 500px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
+    justify-content: space-between;
+}
+div {
+    display: block;
 }
 .gifsContainer {
-    margin: 0px;
-    cursor: default;
-    justify-content: center;
-    flex-direction: column;
-    flex-flow: row wrap;
+    margin: 10px;
 }
 h4{
-    font-size: 22px;
-    font-weight: bolder;
-    margin: 0px;
-    padding: 10px, 0px, 0px,10px;
-}
-botton2{
-
+    display: block;
+    color: #420D09;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
 }
 img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 40%;
+        align-content: center;
+        margin: 0px;
+        padding: 0vw;
+        image-resolution: 167px;
+        display: inline;
 }
 span {
       font-style: normal;

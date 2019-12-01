@@ -8,12 +8,14 @@ window.onload = function () {
   const clickedElement = document.querySelector('#blank')
   const section = document.querySelector(".Favorite")
   const favCont = document.querySelector(".FavContainer");
-  const div = document.querySelector(".gifsContainer");
+  const resultsDiv = document.querySelector('#results')
+ // const div = document.querySelector(".gifsContainer");
   const span = document.querySelector(".count");
   const imgOutput = document.querySelector("#outputIMG");
   const giphyInput = document.querySelector("input");
   const background = document.querySelector(".fullscreen-bg")
   const favHeart = document.querySelector(".fas fa-heart")
+  const detailsDiv = document.querySelector("#Giphy-info")
 
 
   // let newH2 = document.createElement("h2");
@@ -34,8 +36,10 @@ window.onload = function () {
     console.log(pageCount);
 
     function giphyInfo() {
-      div.innerHTML = "";
+      resultsDiv.innerHTML = "";
       for (let i = 0; i < result.length; i++) {
+       const gifsContainer = document.createElement('div')
+        gifsContainer.className = "gifsContainer"
         let searchTitle = result[i].title;
         let imgList = result[i].images.fixed_height.url;
         let imgContainer = document.createElement("img");
@@ -46,9 +50,10 @@ window.onload = function () {
         iFav.innerHTML = favHeart;
         newH.innerHTML = searchTitle;
 
-        div.appendChild(newH);
-        div.appendChild(imgContainer);
-        div.appendChild(button2);
+        gifsContainer .appendChild(newH);
+        gifsContainer .appendChild(imgContainer);
+        gifsContainer .appendChild(button2);
+        resultsDiv.appendChild(gifsContainer);
 
         button2.addEventListener('click', function () {
           let clickedElement2 = searchTitle;
@@ -57,7 +62,7 @@ window.onload = function () {
           let favorites = [];
           favorites.push(clickedElement2);
           favorites.forEach(function (element) {
-            let newH5 = document.createElement('li');
+            let newH5 = document.createElement('ul');
             newH5.innerHTML = element;
             favCont.appendChild(newH5);
           })

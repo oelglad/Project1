@@ -82,9 +82,9 @@ img{
         display: inline;
 }
 span {
-      font-style: normal;
-      text-align: right;
+      text-align: left;
       font-size: medium;
+      font-family: cursive;
   }
   footer{
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

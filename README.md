@@ -20,13 +20,14 @@ GIPHY developer : https://developers.giphy.com/docs/api/endpoint/#search
 retrieved from your API: 'http://api.giphy.com/v1/gifs/search?q=clothes&api_key=OBQh5OZ0RsNCkK49aqNORvPMstxE2WcR&limit=1'
 
 ## Features 
-- User will be able to retreive and search for the Giphy they want related to their search by text (text field is added)
-- Retrieve all gifs related to the search 
+- Users will be able to retreive and search for the Giphy they want related to their search using the text field.
+- Adding a function....called addFavorite as a list (user will be able to add to his favorite list all the gifs under favorites )
+
 
 ## goals 
 
  - adding a new future like animated text
- - user has the option to add his favorite giphy to a favorite bar
+ - user has the option to add his favorite giphy to a favorite list
 
 
 ## wireFrame
@@ -58,24 +59,6 @@ username: "sharpobjects"
 __proto__: Object
 
 
-Adding a fun....called Add favorite
 
-```
-function addFavorite() {
-    toggle className on gif title
-}
-
-... inside for loop event listener
-
-conditional 
-if (
-    gif title has className of "favorite) 
-then (
-    create li 
-    append li to ul (Favorite List)
-    set innertext to gifTitle
-)
-
-```
 
 

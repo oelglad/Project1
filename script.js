@@ -6,11 +6,9 @@ window.onload = function () {
 
   const button = document.querySelector("button")
   const clickedElement = document.querySelector('#blank')
-  const section = document.querySelector(".Favorite")
   const favCont = document.querySelector(".FavContainer");
   const resultsDiv = document.querySelector('#results')
- // const div = document.querySelector(".gifsContainer");
-  const span = document.querySelector(".count");
+ // const span = document.querySelector(".count");
   const imgOutput = document.querySelector("#outputIMG");
   const giphyInput = document.querySelector("input");
   const background = document.querySelector(".fullscreen-bg")
@@ -18,9 +16,6 @@ window.onload = function () {
   const detailsDiv = document.querySelector("#Giphy-info")
 
 
-  // let newH2 = document.createElement("h2");
-  // newH2.innerHTML = "Favorite";
-  // section.appendChild(newH2);
 
   button.addEventListener('click', async function (evt) {
     evt.preventDefault();
@@ -30,10 +25,10 @@ window.onload = function () {
     console.log(response)
     let result = response.data.data;
     let pageCount = response.data.pagination.count;
-    let newH3 = document.createElement('h3');
-    newH3.innerHTML = pageCount;
-    span.appendChild(newH3);
-    console.log(pageCount);
+    // let newH3 = document.createElement('h3');
+    // newH3.innerHTML = pageCount;
+    // span.appendChild(newH3);
+    // console.log(pageCount);
 
     function giphyInfo() {
       resultsDiv.innerHTML = "";

@@ -57,7 +57,7 @@ window.onload = function () {
           let favorites = [];
           favorites.push(clickedElement2);
           favorites.forEach(function (element) {
-            let newH5 = document.createElement('ul');
+            let newH5 = document.createElement('li');
             newH5.innerHTML = element;
             favCont.appendChild(newH5);
           })

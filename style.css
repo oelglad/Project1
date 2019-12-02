@@ -1,8 +1,10 @@
-
+* {
+    box-sizing: border-box;
+  }
 .header {
     background-color: #F1F1F1;
     text-align: center;
-    padding: 20px;
+    padding: 60px;
     font-weight: bolder;
   }
 body {
@@ -41,10 +43,12 @@ button {
   }
   .Favorite{
     font-size: 14px;
-    text-align: right;
+    text-align: left;
     color: #420D09;
     font-weight: bolder;
     font-family: cursive;
+    position: absolute;
+    width: 10vw;
  }
 .Giphy-list {
 display: flex;
@@ -53,7 +57,7 @@ font-family: cursive;
 }  
 #results {
     display: flex;
-    width: 1000px;
+    width: 900px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -80,6 +84,8 @@ img{
         padding: 0vw;
         image-resolution: 167px;
         display: inline;
+        max-block-size: 10vw;
+
 }
 span {
       text-align: left;
@@ -93,5 +99,16 @@ span {
       font-style: italic;
       font-stretch: semi-condensed;
       padding-bottom: 10px;
+      padding: 20px;
   }
-  
+ 
+  @media screen and (min-width: 400px) {
+    body {
+      background-color: darkolivegreen;
+    }
+  }
+  @media (max-width: 700px) {
+    .Favorite {   
+      flex-direction: column;
+    }
+  }
